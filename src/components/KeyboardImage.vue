@@ -16,14 +16,13 @@
 
 <script>
 export default {
-  name: "KeyboardImage",
+  name: "keyboard-image",
   props: {},
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 #keyboard-image {
   height: 35%;
 }
@@ -34,6 +33,6 @@ export default {
 
 #keyboard-img {
   height: 100%;
+  max-width: 100%;
 }
-
 </style>

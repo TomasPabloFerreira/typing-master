@@ -2,9 +2,9 @@
   <div id="app" class="bg-prim">
     <Header></Header>
 
-    <TextInput></TextInput>
+    <text-input></text-input>
 
-    <KeyboardImage></KeyboardImage>
+    <keyboard-image></keyboard-image>
   </div>
 </template>
 
@@ -34,7 +34,8 @@ export default {
   overflow: hidden;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -49,6 +50,19 @@ html, body {
 }
 .bg-bright {
   background-color: #dbedf3;
+}
+
+.prim {
+  color: rgb(40, 49, 73);
+}
+.sec {
+  color: #404b69;
+}
+.tert {
+  color: #00818a;
+}
+.bright {
+  color: #dbedf3;
 }
 
 </style>
