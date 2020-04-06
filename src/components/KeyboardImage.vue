@@ -1,11 +1,15 @@
 <template>
-  <div class="keyboard-image container-fluid">
-    <div class="row">
-      <div class="col-sm-3"></div>
-      <div class="col-sm-6">
-        <img id="keyboard-img" src="../../public/images/keyboard.png" />
+  <div id="keyboard-image" class="keyboard-image container-fluid">
+    <div id="keyboard-image-container" class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <img
+          id="keyboard-img"
+          class="bg-bright"
+          src="../assets/images/keyboard.png"
+        />
       </div>
-      <div class="col-sm-3"></div>
+      <div class="col-sm-1"></div>
     </div>
   </div>
 </template>
@@ -19,7 +23,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#keyboard-img {
-  width: 100%;
+
+#keyboard-image {
+  height: 35%;
 }
+
+#keyboard-image-container {
+  height: 100%;
+}
+
+#keyboard-img {
+  height: 100%;
+}
+
 </style>

@@ -1,22 +1,26 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-prim">
     <Header></Header>
-  
+
+    <TextInput></TextInput>
+
     <KeyboardImage></KeyboardImage>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import KeyboardImage from './components/KeyboardImage.vue'
+import Header from "./components/Header.vue";
+import KeyboardImage from "./components/KeyboardImage.vue";
+import TextInput from "./components/TextInput.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
-    KeyboardImage
-  }
-}
+    TextInput,
+    KeyboardImage,
+  },
+};
 </script>
 
 <style>
@@ -26,6 +30,25 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  overflow: hidden;
 }
+
+html, body {
+  height: 100%;
+}
+
+.bg-prim {
+  background-color: rgb(40, 49, 73);
+}
+.bg-sec {
+  background-color: #404b69;
+}
+.bg-tert {
+  background-color: #00818a;
+}
+.bg-bright {
+  background-color: #dbedf3;
+}
+
 </style>
