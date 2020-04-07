@@ -25,12 +25,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Press+Start+2P&display=swap');
+
 .letter-input {
   display: inline-flex;
 }
 
 .letterText {
-  font-size: 3vw;
+  font-size: 2vw;
+  font-family: 'Inter', sans-serif;
 }
 
 .active {
@@ -42,4 +46,5 @@ export default {
 .success {
   color: green;
 }
+
 </style>

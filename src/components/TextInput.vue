@@ -1,7 +1,7 @@
 <template>
   <div id="text-input" class="row">
-    <div class="col-sm-1"></div>
-    <div id="text-input-container" class="col-sm-10 bg-sec">
+    <div class="col-sm-2"></div>
+    <div id="text-input-container" class="col-sm-8 bg-sec">
       <ul id="letterList">
         <li
           v-for="(letterData, index) in lettersData"
@@ -12,7 +12,7 @@
         </li>
       </ul>
     </div>
-    <div class="col-sm-1"></div>
+    <div class="col-sm-2"></div>
   </div>
 </template>
 
@@ -30,7 +30,7 @@ export default {
       lettersData: [
         { text: "a", state: 2 },
         { text: "b", state: 3 },
-        { text: "c", state: 2 },
+        { text: "t", state: 2 },
         { text: " ", state: 2 },
         { text: "d", state: 3 },
         { text: "e", state: 1 },
@@ -64,6 +64,6 @@ export default {
 
 .letter-input-box {
   height: 5%;
-  width: 5%;
+  width: 3%;
 }
 </style>
