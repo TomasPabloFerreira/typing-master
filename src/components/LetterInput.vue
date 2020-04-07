@@ -1,10 +1,11 @@
 <template>
   <span
-    class="letter-input bright letterText"
+    class="letter-input letterText"
     :class="{
-      active: letterData.state == 1,
+      bright: letterData.state == 0,
+      'active bright': letterData.state == 1,
       fail: letterData.state == 2,
-      success: letterData.state == 3,
+      prim: letterData.state == 3,
     }"
   >
     <template v-if="letterData.text == ' '">
@@ -41,10 +42,10 @@ export default {
   background-color: gray;
 }
 .fail {
-  color: red;
+  color: darkred;
 }
 .success {
-  color: green;
+  color: darkgreen;
 }
 
 </style>

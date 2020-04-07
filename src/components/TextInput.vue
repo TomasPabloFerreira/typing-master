@@ -24,18 +24,22 @@ export default {
   components: {
     LetterInput,
   },
-  props: {},
+  props: ["inputString"],
   data: function() {
     return {
-      lettersData: [
-        { text: "a", state: 2 },
-        { text: "b", state: 3 },
-        { text: "t", state: 2 },
-        { text: " ", state: 2 },
-        { text: "d", state: 3 },
-        { text: "e", state: 1 },
-      ],
+      lettersData: [],
     };
+  },
+  mounted: function() {
+    this.mapStringToLettersData();
+  },
+  methods: {
+    mapStringToLettersData: function() {
+      this.lettersData = this.inputString
+        .split("")
+        .map((letter) => ({ text: letter, state: 0 }));
+      this.lettersData[0]["state"] = 1;
+    },
   },
 };
 </script>

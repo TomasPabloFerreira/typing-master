@@ -2,7 +2,7 @@
   <div id="app" class="bg-prim">
     <Header></Header>
 
-    <text-input></text-input>
+    <text-input :inputString="inputString"></text-input>
 
     <keyboard-image></keyboard-image>
   </div>
@@ -19,6 +19,11 @@ export default {
     Header,
     TextInput,
     KeyboardImage,
+  },
+  data: function() {
+    return {
+      inputString: "hello this is a test",
+    };
   },
 };
 </script>
@@ -64,5 +69,4 @@ body {
 .bright {
   color: #dbedf3;
 }
-
 </style>
