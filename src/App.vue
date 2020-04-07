@@ -1,19 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="bg-prim">
+    <Header></Header>
+
+    <text-input :inputString="inputString"></text-input>
+
+    <keyboard-image></keyboard-image>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "./components/Header.vue";
+import KeyboardImage from "./components/KeyboardImage.vue";
+import TextInput from "./components/TextInput.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    TextInput,
+    KeyboardImage,
+  },
+  data: function() {
+    return {
+      inputString: "hello this is a test",
+    };
+  },
+};
 </script>
 
 <style>
@@ -23,6 +35,38 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  overflow: hidden;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.bg-prim {
+  background-color: rgb(40, 49, 73);
+}
+.bg-sec {
+  background-color: #404b69;
+}
+.bg-tert {
+  background-color: #00818a;
+}
+.bg-bright {
+  background-color: #dbedf3;
+}
+
+.prim {
+  color: rgb(40, 49, 73);
+}
+.sec {
+  color: #404b69;
+}
+.tert {
+  color: #00818a;
+}
+.bright {
+  color: #dbedf3;
 }
 </style>
